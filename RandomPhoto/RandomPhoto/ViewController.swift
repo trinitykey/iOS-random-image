@@ -24,6 +24,9 @@ class ViewController: UIViewController {
         return button
     }()
     
+    let colors: [UIColor] = [
+        .systemPink,.systemBlue, .systemGreen, .systemYellow, .systemPurple, .systemOrange]
+    
     
     
     
@@ -43,6 +46,7 @@ class ViewController: UIViewController {
     
     @objc func didTapButton(){
         getRandomPhoto()
+        view.backgroundColor = colors.randomElement()
     }
     
     
